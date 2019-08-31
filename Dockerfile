@@ -1,6 +1,6 @@
 # Creates the docker container for the workshop in Cambridge
 # Run the container with the following command:
-#   docker run -it --rm -p 8888:8888 peerherholz/workshop_magdeburg
+#   docker run -it --rm -p 8888:8888 peerherholz/workshop_marburg
 
 FROM miykael/nipype_tutorial:latest
 
