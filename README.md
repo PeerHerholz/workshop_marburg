@@ -1,18 +1,18 @@
-# Workshops Magdeburg - 2019
+# Workshop Marburg - 2019
 
-[![GitHub issues](https://img.shields.io/github/issues/peerherholz/workshop_magdeburg.svg)](https://github.com/peerherholz/workshop_magdeburg/issues/)
-[![GitHub pull-requests](https://img.shields.io/github/issues-pr/peerherholz/workshop_magdeburg.svg)](https://github.com/peerherholz/workshop_magdeburg/pulls/)
-[![GitHub contributors](https://img.shields.io/github/contributors/peerherholz/workshop_magdeburg.svg)](https://GitHub.com/peerherholz/workshop_magdeburg/graphs/contributors/)
-[![GitHub Commits](https://github-basic-badges.herokuapp.com/commits/peerherholz/workshop_magdeburg.svg)](https://github.com/peerherholz/workshop_magdeburg/commits/master)
-[![GitHub size](https://github-size-badge.herokuapp.com/peerherholz/workshop_magdeburg.svg)](https://github.com/peerherholz/workshop_magdeburg/archive/master.zip)
-[![GitHub HitCount](http://hits.dwyl.io/peerherholz/workshop_magdeburg.svg)](http://hits.dwyl.io/peerherholz/workshop_magdeburg)
-[![Docker Hub](https://img.shields.io/docker/pulls/peerherholz/workshop_magdeburg.svg?maxAge=2592000)](https://hub.docker.com/r/peerherholz/workshop_magdeburg/)
+[![GitHub issues](https://img.shields.io/github/issues/peerherholz/workshop_marburg.svg)](https://github.com/peerherholz/workshop_marburg/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/peerherholz/workshop_marburg.svg)](https://github.com/peerherholz/workshop_marburg/pulls/)
+[![GitHub contributors](https://img.shields.io/github/contributors/peerherholz/workshop_marburg.svg)](https://GitHub.com/peerherholz/workshop_marburg/graphs/contributors/)
+[![GitHub Commits](https://github-basic-badges.herokuapp.com/commits/peerherholz/workshop_marburg.svg)](https://github.com/peerherholz/workshop_marburg/commits/master)
+[![GitHub size](https://github-size-badge.herokuapp.com/peerherholz/workshop_marburg.svg)](https://github.com/peerherholz/workshop_marburg/archive/master.zip)
+[![GitHub HitCount](http://hits.dwyl.io/peerherholz/workshop_marburg.svg)](http://hits.dwyl.io/peerherholz/workshop_marburg)
+[![Docker Hub](https://img.shields.io/docker/pulls/peerherholz/workshop_marburg.svg?maxAge=2592000)](https://hub.docker.com/r/peerherholz/workshop_marburg/)
 
-This repository contains everything for the workshop in Magdeburg 2019. There are three ways that you can interact with its content:
+This repository contains everything for the workshop in Marburg 2019. There are three ways that you can interact with its content:
 
 ## 1. Docker (recommended)
 
-If you want to have the full experience, use the docker container `peerherholz/workshop_magdeburg`. It provides the computational environment to run the notebooks on any system with all necessary dependencies installed. To install [Docker](https://www.docker.com/) on your system, follow one of those links:
+If you want to have the full experience, use the docker container `peerherholz/workshop_marburg`. It provides the computational environment to run the notebooks on any system with all necessary dependencies installed. To install [Docker](https://www.docker.com/) on your system, follow one of those links:
 
  - [Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntu/) or [Debian](https://docs.docker.com/engine/installation/linux/docker-ce/debian/)
  - [Windows 7/8/9/10](https://docs.docker.com/toolbox/toolbox_install_windows/) or [Windows 10Pro](https://docs.docker.com/docker-for-windows/install/)
@@ -24,16 +24,16 @@ Once Docker is installed, open up the docker terminal and test if it works with 
 
 Once docker is running on your system you can continue with downloading the docker image for this workshop. For this use the command:
 
-`docker pull peerherholz/workshop_magdeburg`
+`docker pull peerherholz/workshop_marburg`
 
 Once the download finished, proceed with the following steps:
 
-1. Run the following command in a terminal: ```docker run -it --rm -p 8888:8888 peerherholz/workshop_magdeburg```
+1. Run the following command in a terminal: ```docker run -it --rm -p 8888:8888 peerherholz/workshop_marburg```
 1. Copy paste the link that looks like ```http://20f109eba8e4:8888/?token=0312c1ef3b61d7a44ff5346d3d150c23249a548850e13868``` into your webbrowser.
 1. Replace the hash number ```20f109eba8e4``` after `http://` with `localhost` or your local IP (probably `192.168.99.100`) if you're on windows.
 1. Once Jupyter Notebook is open, click on the `program.ipynb` notebook, and you're good to go.
 
-And if you want to have **access to the output data created within the docker container**, add the command  `-v /path/to/your/output_folder:/output` before `peerherholz/workshop_magdeburg`, where `/path/to/your/output_folder` should be a free folder on your system, such as `/User/neuro/Desktop/output`.
+And if you want to have **access to the output data created within the docker container**, add the command  `-v /path/to/your/output_folder:/output` before `peerherholz/workshop_marburg`, where `/path/to/your/output_folder` should be a free folder on your system, such as `/User/neuro/Desktop/output`.
 
 ## Some useful Docker Commands
 
@@ -64,15 +64,15 @@ And if you want to have **access to the output data created within the docker co
 If you don't care about some of the software dependencies, or have them already installed on your system, you can use conda to create the necessary python environment to run the notebooks:
 
 1. If you haven't yet, get conda on your system: https://conda.io/miniconda.html
-2. Download the `environment.yml` file from [here].(https://github.com/peerherholz/workshop_magdeburg/blob/master/environment.yml)
+2. Download the `environment.yml` file from [here].(https://github.com/peerherholz/workshop_marburg/blob/master/environment.yml)
 3. Open up a conda terminal (or any other terminal), and create a new conda environment with the following command: `conda env create --name workshop --file /path/to/file/environment.yml`
-4. Download the notebooks in this repository ([here](https://github.com/peerherholz/workshop_magdeburg/archive/master.zip)), save them in the desired location, i.e. (`Desktop/workshop`).
+4. Download the notebooks in this repository ([here](https://github.com/peerherholz/workshop_marburg/archive/master.zip)), save them in the desired location, i.e. (`Desktop/workshop`).
 5. Download the three datasets [adhd](https://www.dropbox.com/sh/wl0auzjfnp2jia3/AAChCae4sCHzB8GJ02VHGOYQa?dl=1), [ds000114](https://www.dropbox.com/sh/s0m8iz8fer3j5el/AACMamy4DyTMHMBud1IVgEDka?dl=1) and [ds000228](https://drive.google.com/file/d/1TWMVjjsBzWJvOx_uq-YVbJU4Yw0Ob0Wh/view?usp=sharing) and put them into the workshop folder, i.e. (`Desktop/workshop`).
 6. Open up a (docker) terminal, activate the conda environment with `source activate workshop` (for mac and linux) or with `activate workshop` (for windows), go into the folder where you saved the just downloaded notebooks (i.e. `Desktop/workshop`) and run the following command from the folder that contains the `program.ipynb` notebook: `jupyter notebook`
 
-**Note**: This only provides you the notebooks from the workshop that are not already in the `nipype_tutorial`. Those notebooks you can download here: https://github.com/peerherholz/workshop_magdeburg
+**Note**: This only provides you the notebooks from the workshop that are not already in the `nipype_tutorial`. Those notebooks you can download here: https://github.com/peerherholz/workshop_marburg
 
 
 ## 3. Jupyter NBViewer
 
-All the notebooks (but not the slides) can be looked at via [Jupyter nbviewer](https://nbviewer.jupyter.org/github/PeerHerholz/workshop_magdeburg/blob/master/program.ipynb). Like this you can see everything but cannot really interact with the scripts or run the code.
+All the notebooks (but not the slides) can be looked at via [Jupyter nbviewer](https://nbviewer.jupyter.org/github/PeerHerholz/workshop_marburg/blob/master/program.ipynb). Like this you can see everything but cannot really interact with the scripts or run the code.
